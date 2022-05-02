@@ -1,0 +1,238 @@
+.movie-info{
+    width: 100%;
+    /* height:  calc(100vh - 60px); */
+    height:  100vh;
+    /* margin-top: 60px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.movie-detail{
+    width: 50%;
+    height: 100%;
+    background: rgb(24, 24, 24);
+    background: linear-gradient(90deg, rgba(24,24,24,1), rgba(24,24,24,0)
+    100%);
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.movie-name{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.genres{
+    opacity: 0.6;
+    margin: 30px 0;
+}
+
+.des{
+    width: 70%;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.starring span{
+    opacity: 0.6;
+}
+.rating{
+    margin-bottom: 30px;
+}
+
+.rating span{
+    opacity: 0.6;
+}
+.watch-btn button{
+    cursor: pointer;
+    margin-top: 30px;
+    background: #c0392b;
+    color: #ffffff;
+    padding: 0.5rem 1.3rem;
+    text-transform: uppercase;
+    border: none;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+.watch-btn button:hover{
+
+    background: #fff;
+    color: #c0392b;
+    transition: .5s ease;
+}
+.trailer-container,
+.recommendations{
+    color: #fff;
+    padding: 5vw 5vw 0;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+iframe{
+    width: 400px;
+    height: 200px;
+}
+
+.movie{
+    flex: 0 0 auto;
+    width: 24%;
+    height: 200px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.movie img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.recommendations-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie p{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+}
+
+.movie:hover p{
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .movie-info{
+        object-fit: contain;
+        height: 380px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .movie-detail{
+        width: 100%;
+        height: 100%;
+        background: rgb(24, 24, 24);
+        background: linear-gradient(90deg, rgba(24,24,24,1), rgba(24,24,24,0)
+        100%);
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        color: #fff;
+        /* margin-top: 200px; */
+    }
+    
+    .movie-name{
+        font-size: 1.2rem;
+        position: absolute;
+        top: 250px;
+
+    }
+    
+    .genres{
+        margin: 10px 0;
+        font-size: .9rem;
+        position: absolute;
+        top: 270px;
+    }
+
+    .des{
+        width: 90%;
+        line-height: 20px;
+        margin-bottom: 10px;
+        font-size: .9rem;
+        position: absolute;
+        top: 400px;
+    }
+    
+    .starring span{
+        opacity: 0.6;
+        font-size: .9rem;
+    }
+    .starring{
+        width: 90%;
+        font-size: .9rem;
+        position: absolute;
+        top: 530px;
+    }
+    .rating{
+        margin-bottom: 10px;
+        font-size: .9rem;
+        position: absolute;
+        top: 312px;
+    }
+    .watch-btn button{
+        position: absolute;
+        top: 310px;
+    }
+    .trailer-container{
+        margin-top: 12rem;
+        width: 100%;
+        
+        flex-wrap: wrap;
+    }
+    .heading{
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    
+    iframe{
+        width: 150px;
+        height: 75px;
+        margin: 0 6px 6px 6px;
+    }
+    .movie{
+        width: 47%;
+        height: 100px;
+        text-align: center;
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+  
+    }
+    
+    .movie img{
+        width: 100%;
+        height: 80px;
+        object-fit: cover;
+    }
+    
+    .recommendations-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .movie p{
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        opacity: 0;
+    }
+}
